@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1" />
+<title>Complain Detail</title>
+<link rel="stylesheet" href="/css/basic.css" type="text/css" media="screen" />
+</head>
+<body>
+	<center>
+		<h3>Complain Detail</h3>
+		<table cellpadding="2" cellspacing="2" border="1">
+			<tr>
+				<td class="heading">Id</td>
+				<td th:text="${complain.id}"></td>
+			</tr>
+			<tr>
+				<td class="heading">Name</td>
+				<td th:text="${complain.name}"></td>
+			</tr>
+			<tr>
+				<td class="heading">Price</td>
+				<td th:text="${complain.price}"></td>
+			</tr>
+			<tr>
+				<td class="heading">Quantity</td>
+				<td th:text="${complain.quantity}"></td>
+			</tr>
+			<tr>
+				<td class="heading">Description</td>
+				<td th:text="${complain.description}"></td>
+			</tr>
+		</table>
+		<br />
+		<br /> <a th:href="@{/complain}">Back</a>
+	</center>
+</body>
+</html>

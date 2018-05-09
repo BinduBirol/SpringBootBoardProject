@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+/* body { */
+/* 	margin: 0px auto; */
+/* 	width: 500px; */
+/* 	background-color: #EEEEEE; */
+/* } */
+/* p.large{ */
+/* 	font-size: 20px; */
+/* } */
+/* p.small{ */
+/* 	font-size: 15px; */
+/* } */
+/* p#displayName{ */
+/* 	display: none; */
+/* } */
+
+body {
+	font-size: 20px;
+	color: teal;
+	font-family: Calibri;
+}
+
+td {
+	font-size: 15px;
+	color: black;
+	width: 100px;
+	height: 22px;
+	text-align: left;
+}
+
+.heading {
+	font-size: 18px;
+	color: white;
+	font: bold;
+	background-color: orange;
+	border: thick;
+}
+	

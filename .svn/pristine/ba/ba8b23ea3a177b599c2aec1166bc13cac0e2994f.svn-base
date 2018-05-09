@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1" />
+<title>Complain List</title>
+<link rel="stylesheet" href="/css/basic.css" type="text/css" media="screen" />
+</head>
+<body>
+	<center>
+		<h3>Complain List</h3>
+		<table cellpadding="2" cellspacing="2" border="1">
+			<tr>
+				<th class="heading">Id</th>
+				<th class="heading">Name</th>
+				<th class="heading">Price</th>
+				<th class="heading">Option</th>
+				<th class="heading">Delete</th>
+				<th class="heading">Edit</th>
+			</tr>
+			<tr th:each="complain: ${complains}">
+				<td th:text="${complain.id}"></td>
+				<td th:text="${complain.name}"></td>
+				<td th:text="${complain.price}"></td>
+				<td><a th:href="@{'/complain/detail/' + ${complain.id}}">Detail</a></td>
+				<td><a th:href="@{'/complain/delete/' + ${complain.id}}">Delete</a></td>
+				<td><a th:href="@{'/complain/edit/' + ${complain.id}}">Edit</a></td>
+			</tr>
+		</table>
+		<br />
+		<br />
+		<a th:href="@{/complain/new}">Create New complain</a>
+	</center>
+</body>
+</html>
